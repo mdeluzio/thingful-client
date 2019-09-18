@@ -11,15 +11,15 @@ import './index.css'
 import { faStar as farStar } from '@fortawesome/free-regular-svg-icons'
 
 import {
-  faBookOpen,
-  faComment,
-  faGift,
-  faGlobeAmericas,
   faListOl,
   faListUl,
   faPenAlt,
   faQuoteLeft,
   faStar as fasStar,
+  faBookOpen,
+  faComment,
+  faGift,
+  faGlobeAmericas,
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
@@ -46,4 +46,4 @@ ReactDOM.render(
   document.getElementById('root')
 )
 
-serviceWorker.unregister()
+//serviceWorker.unregister()
