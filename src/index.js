@@ -11,15 +11,16 @@ import './index.css'
 import { faStar as farStar } from '@fortawesome/free-regular-svg-icons'
 
 import {
-  faListOl,
-  faListUl,
   faPenAlt,
-  faQuoteLeft,
-  faStar as fasStar,
   faBookOpen,
-  faComment,
+  faStar as fasStar,
   faGift,
   faGlobeAmericas,
+  faComment,
+  faListUl,
+  faListOl,
+  faQuoteLeft,
+  
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
@@ -35,15 +36,19 @@ library.add(
   fasStar,
 )
 
-ReactDOM.render(
+const router = (
   <BrowserRouter>
     <ThingListProvider>
       <ThingProvider>
         <App />
       </ThingProvider>
     </ThingListProvider>
-  </BrowserRouter>,
+  </BrowserRouter>
+)
+
+ReactDOM.render(
+  router,
   document.getElementById('root')
 )
 
-//serviceWorker.unregister()
+serviceWorker.unregister()
