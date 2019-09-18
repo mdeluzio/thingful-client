@@ -17,7 +17,6 @@ import {
   faGift,
   faGlobeAmericas,
   faComment,
-  
   faListUl,
   faListOl,
   faQuoteLeft,
@@ -52,3 +51,4 @@ ReactDOM.render(
   document.getElementById('root')
 )
 
+serviceWorker.unregister()
