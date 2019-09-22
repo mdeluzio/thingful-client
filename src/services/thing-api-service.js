@@ -55,7 +55,7 @@ const ThingApiService = {
           ? res.json().then(e => Promise.reject(e))
           : res.json()
       )
-  }
+  },
 }
 
 export default ThingApiService
